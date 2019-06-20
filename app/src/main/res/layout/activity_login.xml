@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tour.LoginActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/bgGrad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"/>
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="125dp"
+                android:src="@mipmap/ic_launcher" />
+            <EditText
+                android:id="@+id/emailIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textColorHint="@color/colorBlack50"
+                android:textColor="@color/colorBlack"
+                android:hint="E-mail"/>
+            <EditText
+                android:id="@+id/passIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:textColorHint="@color/colorBlack50"
+                android:textColor="@color/colorBlack"
+                android:inputType="textPassword"
+                android:hint="Password"/>
+            <TextView
+                android:id="@+id/loginBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorWhite"
+                android:text="Login"
+                android:clickable="true"/>
+            <LinearLayout
+                android:id="@+id/regLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:id="@+id/regText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:text="Don't have an account? Register "/>
+                <TextView
+                    android:id="@+id/regLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:text="here"
+                    android:textColor="@color/colorBlack"
+                    android:clickable="true"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

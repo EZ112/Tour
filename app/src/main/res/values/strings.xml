@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tour</string>
+    <string name="title_register">Register</string>
+    <string name="title_about">About Us</string>
+    <string name="title_tours_list">Tour Lists</string>
+    <string name="title_tours_detail">Tour Detail</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="about_us">About Us</string>
+</resources>

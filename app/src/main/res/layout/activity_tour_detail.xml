@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="30dp"
+    android:paddingTop="15dp"
+    tools:context="com.example.tour.TourDetailActivity">
+
+    <ImageView
+        android:id="@+id/tourImg"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorBlack50"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/tourName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="15dp"
+        android:text="Tour Name"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/tourDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="ddmmyyyy"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@id/tourName" />
+    <TextView
+        android:id="@+id/priceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Price "
+        android:textColor="@color/colorWhite"
+        android:layout_below="@id/tourDate"/>
+    <TextView
+        android:id="@+id/tourPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp 000.000,00"
+        android:textColor="@color/colorWhite"
+        android:layout_toRightOf="@id/priceLabel"
+        android:layout_below="@id/tourDate"/>
+    <TextView
+        android:id="@+id/buyBtn"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:text="Book Tour"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/button"
+        android:layout_below="@id/tourImg"/>
+    <TextView
+        android:id="@+id/tourDestLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Tour Detail"
+        android:gravity="center"
+        android:layout_below="@id/buyBtn"/>
+    <ListView
+        android:id="@+id/tourDestView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="15dp"
+        android:divider="@color/colorTrans"
+        android:dividerHeight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/tourDestLabel"/>
+
+</RelativeLayout>

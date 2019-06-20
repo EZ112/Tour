@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.tour.HomeActivity"
+    tools:showIn="@layout/app_bar_home"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/profileHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Profile"
+        android:textSize="20dp"/>
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@mipmap/profile_pic"
+        android:layout_below="@id/profileHead"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Username"
+        android:textSize="18dp"
+        android:layout_below="@id/profileHead"
+        android:layout_toRightOf="@id/profilePic"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="username@gmail.com"
+        android:layout_below="@id/username"
+        android:layout_toRightOf="@id/profilePic"/>
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+62-81234123445"
+        android:layout_below="@id/email"
+        android:layout_toRightOf="@id/profilePic"/>
+
+    <TextView
+        android:id="@+id/myToursHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="My Tours"
+        android:textSize="20dp"
+        android:layout_below="@id/profilePic"/>
+
+    <TextView
+        android:id="@+id/myToursEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="You haven't book any tour yet"
+        android:layout_below="@+id/myToursHead"/>
+
+    <ListView
+        android:id="@+id/myToursView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@color/colorTrans"
+        android:dividerHeight="15dp"
+        android:layout_below="@id/myToursHead"
+        android:visibility="gone">
+
+    </ListView>
+
+</RelativeLayout>
